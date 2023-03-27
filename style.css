@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Set the size of the div element that contains the map */
+#map {
+  height: 100vh; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(149, 246, 240);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 8px;
+  margin-bottom: 30px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h2{
+  margin: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 100px;
+  padding: 20px;;
+}
+th{
+  font-size: 26px;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+tr:hover {background-color: coral;}
+.tekstMeIMadh{
+  margin-top: 29px;
+  font-size: 32;
+  color: black;
+}
+.mainRoot{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  background-color: rgba(210, 255, 245, 0.83);
+  height: 100vh;
+  justify-content: space-between;
+  gap: 5;
+}
+.root {
+display: flex;
+flex: 1;
+flex-direction: column;
+gap: 4;
+align-items: center;
+}
+.oraret {
+text-align: center;
+font-size: 32;
+font-weight: 600;
+color: aqua;
+}
+.mapouter {
+position: relative;
+text-align: right;
+width: 90%;
+height: 400px;
+}
+.gmap_canvas {
+overflow: hidden;
+background: none !important;
+width: 100%;
+height: 100%;
+}
+.gmap_iframe {
+height: 100% !important;
+}
